@@ -12,12 +12,13 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://slumbook:Eosdev81@ds021751.mlab.com:21751/slumbook',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   clientKey: '9MqmPwCDKVxnkcZqCW2CPKQ1FM0RORgkit6WBi7R',
   appId: process.env.APP_ID || 'wDT8TzVtlukVROGmPe1bXY3q3mORJMEUTRyfQgpv',
   masterKey: process.env.MASTER_KEY || 'cJhKY8CTbm2NOcd4RHRLoTOPbjFjbe3EJ3pYyke3', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://mighty-taiga-88243.herokuapp.com/',  // Don't forget to change to https if needed
+  facebookAppId:'423616424498622',
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
