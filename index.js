@@ -19,7 +19,7 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'wDT8TzVtlukVROGmPe1bXY3q3mORJMEUTRyfQgpv',
   masterKey: process.env.MASTER_KEY || 'cJhKY8CTbm2NOcd4RHRLoTOPbjFjbe3EJ3pYyke3', //Add your master key here. Keep it secret!
   serverURL: process.env.SERVER_URL || 'https://mighty-taiga-88243.herokuapp.com/',  // Don't forget to change to https if needed  
-    facebookAppIds: {'423616424498622'} 
+   
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
