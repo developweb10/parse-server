@@ -22,8 +22,14 @@ var api = new ParseServer({
    
    liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
+  }  
+  oauth: {   
+   facebook: {
+     appIds: "423616424498622"
+   }
   }
-}); 
+});
+
    
    
    
