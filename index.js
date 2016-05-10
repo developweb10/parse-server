@@ -18,14 +18,16 @@ var api = new ParseServer({
   fileKey:'71e9ebf5-a6f2-4b92-8370-31670f4711e2',
   appId: process.env.APP_ID || 'wDT8TzVtlukVROGmPe1bXY3q3mORJMEUTRyfQgpv',
   masterKey: process.env.MASTER_KEY || 'cJhKY8CTbm2NOcd4RHRLoTOPbjFjbe3EJ3pYyke3', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://mighty-taiga-88243.herokuapp.com/',  // Don't forget to change to https if needed  
-   facebook: {
-     appIds: "423616424498622"
-   }
-  liveQuery: {
+  serverURL: process.env.SERVER_URL || 'https://mighty-taiga-88243.herokuapp.com/',  // Don't forget to change to https if needed 
+   
+   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
-});
+}); 
+   
+   
+   
+  
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey
