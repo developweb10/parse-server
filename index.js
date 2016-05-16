@@ -25,7 +25,7 @@ var api = new ParseServer({
   push: {
       android: {
         senderId: 'slumbook2016',
-        apiKey: 'AIzaSyBfy3Rrvryyu8NPDBf6HVUY4rvoIIETwi8'
+        apiKey: 'AIzaSyDN-zg6G0GUN_m0H5HLJgSX5gClvkzOa38'
   }},  
   oauth: {   
    facebook: {
